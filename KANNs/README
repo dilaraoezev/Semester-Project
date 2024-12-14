@@ -23,5 +23,7 @@ cargo install hyperfine --version 1.18.0
 # 6. run both codes with hyperfine
 hyperfine --warmup 5 --runs 20 './KANNs_cpp' 'python3 LagrangeKANN.py'
 
+#Python code needs to be located in the build file
+
 # for gpu analysis we can only modify the width: 5,10,20,50,100. with order 1 and precision 1e-3, 100 maximum epochs.
 
